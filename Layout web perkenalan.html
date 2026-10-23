@@ -3,125 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Profile – Raga Sambang Kumara</title>
-<style>
-  :root {
-    --bg: #f3f6f4;
-    --card: #ffffff;
-    --ink: #1c2a26;
-    --muted: #5b6b66;
-    --accent: #1f6f5c;
-    --line: #cfd9d5;
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    padding: 24px 16px;
-    background: var(--bg);
-    color: var(--ink);
-    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-  }
-  .page {
-    max-width: 960px;
-    margin: 0 auto;
-    background: var(--card);
-    border: 1px solid var(--line);
-    border-radius: 10px;
-    padding: 32px;
-  }
-  .page-title {
-    margin: 0 0 20px;
-    font-size: .9rem;
-    color: var(--muted);
-    border-bottom: 1px solid var(--line);
-    padding-bottom: 8px;
-  }
+<title>Profile: Raga Sambang Kumara</title>
 
-  /* Header */
-  header {
-    display: grid;
-    grid-template-columns: 220px 1fr 180px;
-    gap: 28px;
-    align-items: start;
-  }
-  .photo {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 8px;
-    border: 1px solid var(--line);
-    background: #e4ebe8;
-  }
-  h1 { margin: 0 0 12px; font-size: 2rem; line-height: 1.2; }
-  table.bio { border-collapse: collapse; font-size: .95rem; }
-  table.bio th {
-    text-align: left;
-    font-weight: 600;
-    color: var(--muted);
-    padding: 3px 16px 3px 0;
-    vertical-align: top;
-    white-space: nowrap;
-  }
-  table.bio td { padding: 3px 0; }
-  a { color: var(--accent); }
+<link rel="stylesheet" href="CSS/style.css">
 
-  aside.categories { text-align: right; }
-  aside.categories h2 { margin: 0 0 8px; font-size: 1rem; }
-  aside.categories ul { margin: 0; padding: 0; list-style: none; color: var(--muted); }
-  aside.categories li { padding: 2px 0; }
-
-  /* Deskripsi */
-  .about { margin: 32px 0; max-width: 78ch; }
-  .about p { margin: 0 0 16px; text-align: justify; }
-
-  /* Multimedia & download */
-  .media {
-    display: grid;
-    grid-template-columns: 1.2fr 1fr 1fr;
-    gap: 24px;
-    align-items: start;
-  }
-  .media h3 { margin: 0 0 8px; font-size: .95rem; }
-  video { width: 100%; border-radius: 8px; background: #000; display: block; }
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-  }
-  .gallery img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid var(--line);
-    background: #e4ebe8;
-  }
-  .attachments {
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    padding: 12px 16px;
-  }
-  .attachments h3 { margin-bottom: 6px; }
-  .attachments ul { margin: 0; padding: 0; list-style: none; }
-  .attachments li { padding: 5px 0; font-size: .93rem; }
-  .attachments li + li { border-top: 1px solid var(--line); }
-
-  :focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
-
-  /* Responsif */
-  @media (max-width: 800px) {
-    .page { padding: 20px; }
-    header { grid-template-columns: 1fr; }
-    .photo { width: 100%; height: auto; aspect-ratio: 1 / 1; max-width: 280px; }
-    aside.categories { text-align: left; }
-    .media { grid-template-columns: 1fr; }
-  }
-</style>
 </head>
 <body>
 <main class="page">
-  <p class="page-title">Profile Page – Raga Sambang Kumara</p>
+  <p class="page-title">Profile Page: Raga Sambang Kumara</p>
 
   <header>
     <!-- a. Foto diri: ganti file di folder foto/ -->
@@ -136,7 +25,12 @@
         <tr><th>Program Studi</th><td>Teknik Informatika</td></tr>
         <tr><th>Tempat, Tgl. Lahir</th><td>Jakarta, 31 Mei 2006</td></tr>
         <tr><th>Alamat</th><td>Provinsi Jawa Barat, Kecamatan Gunung Putri, Kabupaten Bogor, Kelurahan Bojong Kulur, Bumi Mutiara Blok JG 10/03.</td></tr>
-        <tr><th>Email</th><td><a href="https://mail.google.com/mail/?view=cm&to=raskagamma@gmail.com">raskagamm@gmail.com</a></td></tr>
+        <tr><th>Email</th><td>
+          <ul class="email">
+            <li><a href="https://mail.google.com/mail/?view=cm&to=raskagamma@gmail.com">raskagamm@gmail.com</a></li>
+            <li><a href="https://mail.google.com/mail/?view=cm&to=0110226059.student.nurulfikri.ac.id">0110226059.student.nurulfikri.ac.id</a></li>
+          </ul>
+        </td></tr>
         <tr><th>Telepon</th><td>0858-8001-5907</td></tr>
       </table>
     </div>
